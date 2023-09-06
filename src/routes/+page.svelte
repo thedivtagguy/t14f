@@ -2,6 +2,8 @@
 	import Counter from './Counter.svelte';
 	import welcome from '$lib/images/t1.webp';
 	import welcome_fallback from '$lib/images/t1.png';
+	import flat from '$lib/images/room.jpg';
+	import willBeBack from '$lib/images/willbeback.jpg'
 </script>
 
 <svelte:head>
@@ -23,8 +25,18 @@
 	</h1>
 
 	<h2>
-		4th Floolr, Sundaram PG
+		<a href="https://4thfloolr.com">4th Floolr</a>, Sundaram PG
 	</h2>
+
+	<picture>
+		<img class="framed flat" src={flat} alt="My room" />
+		<caption class="caption">The greatest, most prosperous sovereign entity in Yelahanka, Bangalore <br/> since Sri Devi Grand</caption>
+	</picture>
+
+	<picture>
+		<img class="framed flat" src={willBeBack} alt="My room" />
+		<caption class="caption">We'll be back shortly.</caption>
+	</picture>
 
 </section>
 
@@ -96,5 +108,11 @@
 		.welcome {
 			width: 50%; /* Adjust the image width for smaller screens */
 		}
+	}
+
+	.flat {
+		margin-top: 100rem;
+		max-width: 500px;
+		padding: 10px;
 	}
 </style>

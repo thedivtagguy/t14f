@@ -80,5 +80,21 @@
 		filter: drop-shadow(5px 15px 10px #222222c1)
 	}
 
-	
+	/* Media query for screens smaller than 768px (typical mobile screens) */
+	@media screen and (max-width: 768px) {
+		h1 {
+			font-size: 3rem; /* Decrease the font size for better mobile readability */
+		}
+
+		h2 {
+			font-size: 1.2rem; /* Decrease the font size for better mobile readability */
+			letter-spacing: 0.3rem;
+			width: 60%;
+			text-align: center;
+		}
+
+		.welcome {
+			width: 50%; /* Adjust the image width for smaller screens */
+		}
+	}
 </style>

@@ -101,7 +101,7 @@ button:focus:not(:focus-visible) {
 	width: 1px;
 	white-space: nowrap;
 }
-.framed {
+/* .framed {
 	
 	margin: auto;
 	background: #fff;
@@ -112,9 +112,33 @@ button:focus:not(:focus-visible) {
 	border-bottom-color: lighten(#000, 20%);
 	border-left-color: lighten(#000, 0%);
 	box-shadow: 2px 2px 4px rgba(0,0,0,.6);
-  }
+  } */
 
   .caption {
 	width: 100%;
 	margin: auto;
   }
+
+  @media screen and (max-width: 768px) {
+	img {
+		max-width: 300px;
+		width: 100%;
+	}
+
+	/* .framed {
+
+		margin: auto;
+		background: #fff;
+		border-style: solid;
+		border-width: 15px;
+		border-top-color: lighten(#000, 20%);
+		border-right-color: lighten(#000, 0%);
+		border-bottom-color: lighten(#000, 20%);
+		border-left-color: lighten(#000, 0%);
+		box-shadow: 2px 2px 4px rgba(0,0,0,.6);
+	  } */
+
+	  br.sri {
+		display: none;
+	  }
+}

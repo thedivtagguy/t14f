@@ -90,6 +90,11 @@ button:focus:not(:focus-visible) {
 	}
 }
 
+picture {
+	max-width: 900px;
+	width: 100%;
+}
+
 .visually-hidden {
 	border: 0;
 	clip: rect(0 0 0 0);
@@ -115,7 +120,7 @@ button:focus:not(:focus-visible) {
   } */
 
   .caption {
-	width: 100%;
+	width: 80%;
 	margin: auto;
   }
 

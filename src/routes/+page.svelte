@@ -27,8 +27,10 @@
 	<h2>
 		<a href="https://4thfloolr.com">4th Floolr</a>, Sundaram PG
 	</h2>
-	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d840.8458084785633!2d77.56760026697779!3d13.105916565637383!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae199fa7e3828f%3A0x15885e21ec389825!2sT1%20Sundarbois!5e0!3m2!1sen!2sin!4v1694014984657!5m2!1sen!2sin"  height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-	<caption>A fine, well-reviewed establishment nestled within an eccentric locale</caption>
+	<div class="map">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d840.8458084785633!2d77.56760026697779!3d13.105916565637383!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae199fa7e3828f%3A0x15885e21ec389825!2sT1%20Sundarbois!5e0!3m2!1sen!2sin!4v1694014984657!5m2!1sen!2sin"  height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+		<caption>A fine, well-reviewed establishment nestled within an eccentric locale</caption>
+	</div>
 	<picture>
 		<img class="framed flat" src={flat} alt="My room" />
 		<caption class="caption">The greatest, most prosperous sovereign entity in Yelahanka, Bangalore <br class="sri"/> since Sri Devi Grand</caption>
@@ -48,6 +50,17 @@
 		justify-content: center;
 		align-items: center;
 		flex: 0.6;
+	}
+	.map, 
+	picture {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.map {
+		width: 100%;
 	}
 
 	h1 {

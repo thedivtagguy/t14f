@@ -24,7 +24,7 @@
 		
 	</h1>
 
-	<h2>
+	<h2 class="heading">
 		<a href="https://4thfloolr.com">4th Floolr</a>, Sundaram PG
 	</h2>
 	<div class="map">
@@ -40,6 +40,10 @@
 		<img class="framed flat" src={willBeBack} alt="My room" />
 		<caption class="caption">We'll be back shortly.</caption>
 	</picture>
+
+	<h2 class="footer">
+		<a href="https://4thfloolr.com">4th Floolr</a>, Sundaram PG
+	</h2>
 
 </section>
 
@@ -57,10 +61,23 @@
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
+		gap: 1rem;
 	}
 
 	.map {
 		width: 100%;
+	}
+
+	h2.footer {
+		margin-top: 10rem;
+		font-style: italic;
+		letter-spacing: 0.1rem;
+		opacity: 0.5;
+		transition: all .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+	}
+	h2.footer:hover {
+		opacity: 1;
 	}
 
 	h1 {
@@ -70,7 +87,7 @@
 		margin: 12rem 0 3rem 0;
 	}
 
-	h2 {
+	h2.heading {
 		font-size: 1.5rem;
 		text-transform: uppercase;
 		font-weight: 600;
